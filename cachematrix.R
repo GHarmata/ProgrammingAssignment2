@@ -2,6 +2,8 @@
 # examples for this assignment.  The explanation can be found at
 # https://class.coursera.org/rprog-013/forum/thread?thread_id=694.
 
+##############################################################
+
 ## Function 1: makeCacheMatrix
 
 ## The function makeCacheMatrix defines four functions: set, get, setmatrix, and
@@ -30,6 +32,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
+
 ## Function 2: cacheSolve
 
 ## The function cacheSolve first checks to see if the inverse of a matrix x has
@@ -50,10 +53,11 @@ cacheSolve <- function(x, ...) {
    }
    data <- x$get()
    
-   # Part 2: Checks if matrix can be inverted, then solves for the inverse of the matrix
-   # if possible.  If the matrix does not have an inverse, a message saying so is
-   # returned.  For more information, check out
-   # http://mathworld.wolfram.com/SingularMatrix.html
+   # Part 2: Checks if matrix can be inverted, then solves for the inverse of
+   # the matrix if possible.  If the matrix does not have an inverse, a message
+   # saying so is returned.  For more information, check out 
+   # http://mathworld.wolfram.com/SingularMatrix.html or
+   # http://en.wikipedia.org/wiki/Invertible_matrix.
    
    if(det(data)!= 0){
       i <- solve(data, ...)
